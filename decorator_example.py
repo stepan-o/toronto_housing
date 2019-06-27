@@ -1,6 +1,16 @@
 def my_decorator(func):
-
+    """
+    Put simply: decorators wrap a function, modifying its behavior.
+    :param func: function
+        function to be wrapped
+    :return: wrapper: function
+        wrapped function
+    """
     def wrapper():
+        """
+        function func with a wrapper
+        :return: None
+        """
 
         print("something is happening before the function is called")
         func()
