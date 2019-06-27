@@ -30,3 +30,12 @@ say_wee = my_decorator(say_wee)
 
 print("\n--- After wrapping the function 'say_wee' with a decorator")
 say_wee()
+
+# ---------- analogous script using Python @ symbol for decorators
+@my_decorator
+def say_woohoo():
+    print("WooHoooo!")
+
+
+print("\n--- Function 'say_woohoo' wrapped with 'my_decorator':")
+say_woohoo()
